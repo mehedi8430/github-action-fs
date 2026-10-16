@@ -1,10 +1,15 @@
 {
   "name": "github-action-fs",
+  "type": "module",
   "packageManager": "yarn@4.14.1",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha tests/*.js"
   },
   "dependencies": {
-    "express": "^5.3.0"
+    "chai": "^6.3.0",
+    "express": "^5.3.0",
+    "mocha": "^12.0.3",
+    "supertest": "^7.3.1"
   }
 }
